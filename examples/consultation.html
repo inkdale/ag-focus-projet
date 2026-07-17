@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AgFocus - Request Consultation</title>
+</head>
+
+<body>
+
+    <!-- Restructure this Html code, add the header, main, section and footer tags -->
+
+    <!-- Navigation Header -->
+    <p align="center">
+        <a href="index.html">Crop Solutions</a> |
+        <b>Request Consultation</b>
+    </p>
+    <hr size="4" color="green">
+
+    <h1 align="center">Request a Soil & Service Consultation</h1>
+    <p align="center">Complete the application details below to schedule an on-site field assessment with an expert
+        agronomist.</p>
+
+    <!-- Advanced HTML Input Form inside a structured container table -->
+    <table border="1" align="center" cellpadding="20" cellspacing="0" bgcolor="#F9F9F9">
+        <tr>
+            <td>
+                <form action="#" method="POST">
+
+                    <h3>1. Contact Details</h3>
+                    <p>
+                        <label for="farmerName">Producer Name:</label><br>
+                        <input type="text" id="farmerName" name="farmerName" size="30" required>
+                    </p>
+                    <p>
+                        <label for="farmerEmail">Contact Email:</label><br>
+                        <input type="email" id="farmerEmail" name="farmerEmail" size="30" required>
+                    </p>
+
+                    <h3>2. Operation Metrics</h3>
+                    <p>
+                        <label for="farmSize">Total Farm Size (Acres):</label><br>
+                        <input type="number" id="farmSize" name="farmSize" min="1" max="50000" required>
+                    </p>
+                    <p>
+                        <label for="primaryCrop">Primary Crop Focus:</label><br>
+                        <select id="primaryCrop" name="primaryCrop" required>
+                            <option value="">-- Choose an Option --</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="canola">Canola</option>
+                            <option value="barley">Barley</option>
+                            <option value="pulses">Pulses / Peas</option>
+                            <option value="other">Other / Mixed Livestock</option>
+                        </select>
+                    </p>
+
+                    <h3>3. Service Requirements</h3>
+                    <p>Select your required system upgrade package:</p>
+                    <p>
+                        <input type="radio" id="service1" name="serviceType" value="soil" checked>
+                        <label for="service1">Advanced Soil pH Mapping</label><br>
+
+                        <input type="radio" id="service2" name="serviceType" value="drone">
+                        <label for="service2">Drone Multi-Spectral Imagery</label><br>
+
+                        <input type="radio" id="service3" name="serviceType" value="irrigation">
+                        <label for="service3">Variable Rate Irrigation Planning</label>
+                    </p>
+
+                    <p>
+                        <label for="fieldNotes">Specific Field Issues or Historical Data:</label><br>
+                        <textarea id="fieldNotes" name="fieldNotes" rows="6" cols="45"
+                            placeholder="List any problem areas, flooding zones, or nutrient deficiencies..."></textarea>
+                    </p>
+
+                    <p align="center">
+                        <input type="submit" value="Submit Form Data">
+                    </p>
+
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <hr size="1" color="green">
+    <p align="center"><small>&copy; 2026 AgFocus Systems. Empowering Sustainable Agriculture.</small></p>
+
+</body>
+
+</html>
