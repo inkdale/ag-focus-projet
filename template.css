@@ -1,4 +1,16 @@
-.header a{
-    text-decoration: none;
+header {
     text-align: center;
+}
+
+body{
+    margin-left: 30px;
+}
+
+body h2{
+    text-decoration: underline;
+}
+
+header a{
+    text-decoration: none;
+    padding: 10px;
 }
